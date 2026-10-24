@@ -1,11 +1,12 @@
 [workspace]
 resolver = "2"
-members = ["crates/bum-core", "crates/bum-adapters", "crates/bum-service", "crates/bum-cli", "crates/bum-skills", "app/src-tauri"]
+members = ["crates/bum-core", "crates/bum-adapters", "crates/bum-service", "crates/bum-skills"]
 
 [workspace.package]
 version = "1.2.0"
 edition = "2021"
 license = "GPL-3.0-or-later"
+repository = "https://github.com/bumeter/core"
 
 [workspace.dependencies]
 serde = { version = "1", features = ["derive"] }
@@ -18,5 +19,4 @@ toml = "0.9"
 rusqlite = { version = "0.40", features = ["bundled"] }
 notify = "8"
 interprocess = "2"
-clap = { version = "4", features = ["derive"] }
 tempfile = "3"
